@@ -1,0 +1,115 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+/* Header */
+
+#header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fafafa
+}
+
+.title {
+  font-size: 2em;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: rgb(100, 100, 100);
+}
+
+/* Navbar */
+
+nav {
+  background-color: #fff; /* Background Navbar */
+  border-top: 1px solid #e6e6e6; /* Border/Batas atasnya tipis*/
+  border-bottom: 1px solid #e6e6e6; /* Border/Batas bawahnya tipis*/
+}
+
+.menu {
+  list-style-type: none; /* tanpa ikon list supaya bersih*/
+  display: flex; /* Buat menyamping urutannya */
+  justify-content: center; 
+  margin: 0; 
+  padding: 10px 0; /* Jarak dari teks ke sudut elemen */
+}
+
+.menu li {
+  margin: 10px 20px; /* Margin dari setiap section list di navbar */
+}
+
+.menu a:hover {
+  color: #0078ff; /* Warna perubahan warna ketika hover */ 
+}
+
+.menu a {
+  text-decoration: none; /* Menghilangkan default underline dari elemen bertipe link */
+  color: #333; /* Mengubah warna lebih gelap dari defaultnya */
+  transition: color 0.3s; /* Durasi transisi dari fitur hover di selector sebelumnya */
+}
+
+
+/* section */
+
+section {
+  max-width: 800px; /*Panjang elemen section (tidak full width)*/
+  margin: 60px auto; /*Margin antar section atas bawah 60px kiri kanan auto*/
+  padding: 0 20px; /*Paddingnya atas bawah 0, kiri kanan 20px*/
+}
+
+h2 {
+  color: #0078ff;
+  border-bottom: 2px solid #0078ff; /*Garis bawah judul section, ketebalan, garis(border) dan warna*/
+  padding-bottom: 5px; /*jarak antara garis (border) ke teks judul sectionnya (h2)*/
+  text-align: left; /*Rata kiri*/
+}
+
+/* List Properties */
+
+.project-list {
+  list-style-type: square; /*tipe ikon listnya kotak*/
+  padding-left: 20px; /*padding dari kirinya 20 px, semakin besar semakin jauh ketengah*/
+}
+
+.project-list li {
+  margin-bottom: 10px; /*Margin/spasi dibawah setiap listnya*/
+}
+
+
+#contact p {
+  text-align: left;
+}
+
+
+footer {
+  background-color: #fafafa;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+/* =============================
+   CSS Specificity Example
+   Inline > ID > Class > Element
+   Contoh:
+   ID (#header) lebih tinggi prioritasnya
+============================= */
+p {
+  color: #444; /* Elemen */
+}
+
+.subtitle {
+  color: #555; /* Class, prioritas lebih tinggi */
+}
+
+#header .subtitle {
+  color: #333; /* ID + Class → lebih tinggi lagi */
+}
